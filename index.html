@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="survey-form">
+            <h3 for="name">Name</h3>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <h3 for="email">Email</h3>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <h3 for="age">Age(optional)</h3>
+            <input type="number" id="age" name="age" min="0" max="100" placeholder="Age">
+            
+            <h3 for="role">Which option best describes your current role?</h3>
+            <select id="role" name="role">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <h3>Would you recommend Tech space to a friend?</h3>
+            <input type="radio" id="female" value="female" name="gender">
+            <label for="female">Definitely</label>
+
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="male">Maybe</label>
+
+            <input type="radio" id="female" value="female" name="gender">
+            <label for="female">Not sure</label>
+
+            <h3 for="comments">Any comments or suggestions?</h3>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <h3>What would you like to see improved? (Check all that apply)</h3>
+            <input type="checkbox" id="Front-end" value="Front-end">
+            <label for="Front-end">Front-end Projects</label>
+
+            <input type="checkbox" id="Back-end" value="Back-end">
+            <label for="Back-end">Back-end Projects</label>
+
+            <input class="submit" type="submit" value="Submit">  
+        </form>
+    </div>
+</body>
+</html>
